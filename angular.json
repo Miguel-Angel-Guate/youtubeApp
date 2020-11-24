@@ -62,7 +62,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "youtubeApp:build"
+            "browserTarget": "youtubeApp:build",
+            "port": 4500
           },
           "configurations": {
             "production": {
@@ -119,6 +120,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "youtubeApp"
 }
