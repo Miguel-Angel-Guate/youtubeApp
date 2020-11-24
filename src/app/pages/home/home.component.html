@@ -1,2 +1,21 @@
 <h1 class="mt-4">Youtube video</h1>
 <hr>
+
+<div class="card-columns">
+  <div class="card" *ngFor="let video of videos">
+    <img [src]="video.thumbnails.high.url" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{video.title}}</h5>
+      <p class="card-text"><strong>Autor </strong>{{video.channelTitle}}</p>
+      <p class="card-text"><strong>published </strong>{{video.publishedAt | date}}</p>
+      <button class="btn btn-outline-primary btn-block">view video</button>
+    </div>
+  </div>
+</div>
+<div class="row mt-4 mb-4 text-center">
+  <div class="col">
+    <button class="btn btn-primary btn-lg">
+      load more
+    </button>
+  </div>
+</div>
