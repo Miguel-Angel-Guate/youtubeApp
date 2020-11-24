@@ -8,13 +8,13 @@
       <h5 class="card-title">{{video.title}}</h5>
       <p class="card-text"><strong>Autor </strong>{{video.channelTitle}}</p>
       <p class="card-text"><strong>published </strong>{{video.publishedAt | date}}</p>
-      <button class="btn btn-outline-primary btn-block">view video</button>
+      <button class="btn btn-outline-primary btn-block" (click)="showVideo(video)">view video</button>
     </div>
   </div>
 </div>
 <div class="row mt-4 mb-4 text-center">
   <div class="col">
-    <button class="btn btn-primary btn-lg">
+    <button class="btn btn-primary btn-lg" (click)="loadMore()">
       load more
     </button>
   </div>
